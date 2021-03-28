@@ -71,18 +71,23 @@ public class Test02 {
 		public static void main(String[] args) {
 			Scanner sc = new Scanner(System.in);
 			
+			
+			
 			System.out.println("아이디를 입력하시오");
-			String id = sc.next();
+			String userid = sc.next();
+			
 			
 			System.out.println("비밀번호를 입력하시오");
-		    String pw = sc.next();
+		    String userpw = sc.next();
 		    
-		    System.out.println("(id = pika && pw =pika) ?"+
-		    		"현재 고객님은 VIP이십니다. 20% 할인"
-		    		+ " 적용하여 1600원입니다 현재 고객님은 일반 고객이십니다. 2000원 입니다." );
+		    
+		    
+		     System.out.println((userid.equals("pika")) && (userpw.equals("pika1234")) ? "현재 고객님은 VIP이십니다. 20% 할인"
+		    		+ " 적용하여 1600원입니다" : "현재 고객님은 일반 고객이십니다. 2000원 입니다." );
 		}
 
 }
+
 
 
 ```
