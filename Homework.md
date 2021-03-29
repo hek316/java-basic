@@ -134,20 +134,19 @@ package day03_28;
 import java.util.Scanner;
 
 
+
+
 public class Test03 {
 		public static void main(String[] args) {
-			Scanner sc = new Scanner(System.in);
-			
-			int rand = ((int)(Math.random()*8)+2);
-			System.out.println(rand+"x2");
-			
-			System.out.println("답을 입력하시오");
-			int answer = sc.nextInt();
-			
-			System.out.println(answer==rand*2  ? "정답!" : "땡!");
-			
-			
-			
+		Scanner sc = new Scanner(System.in);
+		int x , y , answer ;
+		x = (int)(Math.random()*8)+2;
+		y = (int)(Math.random()*9)+1;
+		
+		System.out.println(x+"x"+y+"=");
+		answer = sc.nextInt();
+		
+		System.out.println(answer == x*y ? "정답!" : "땡..");
 						
 			}
 }
