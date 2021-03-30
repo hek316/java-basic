@@ -17,17 +17,17 @@ import javax.swing.JOptionPane;
 public class homework01_1 {
 	public static void main(String[] args) {
 		
-		double t ,w ,BMI;
+		double t ,w ,bmi;
 		String name;
 		name = JOptionPane.showInputDialog(null, "이름을 입력하시오");
 		t = Double.parseDouble(JOptionPane.showInputDialog("키를 입력 하시오(단위 cm)"));
 		w = Double.parseDouble(JOptionPane.showInputDialog("몸무게를 입력하시오"));
 		
-		BMI = w/(t*t);
+		bmi = w/(t*t);
 		
 		
 		
-		JOptionPane.showMessageDialog(null, name+"님의 BMI 수치:" + BMI);
+		JOptionPane.showMessageDialog(null, name+"님의 BMI 수치:" + bmi);
 		
 		
 		
@@ -115,6 +115,8 @@ public class homework03 {
 		
 		if(num%2==0&&num%3==0&&num%5==0){
 			System.out.println(num+"은 2의 배수 3의 배수 5의 배수");
+		}else if(num%2==0&&num%3==0){
+		         System.out.println(num+"은 2의 배수 3의 배수 ");
 		}else if(num%3==0&&num%5==0){
 			System.out.println(num+"은 3의 배수 5의배수");
 		}else if(num%2==0) {
