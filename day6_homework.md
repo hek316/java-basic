@@ -129,3 +129,54 @@ public class homework03 {
 
 }
 ```
+```java
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String name;
+		double t;
+		int age , cnt;
+		cnt=0;
+			
+	
+		System.out.println("키를 입력하시오 (단위cm)");
+		t = sc.nextDouble();
+		System.out.println("나이를 입력하시오");
+		age = sc.nextInt();
+	
+		
+		if(t>=80&&t<200) {
+			System.out.println("회전목마");
+			cnt++;
+		}
+		
+		if(age>=15 && t >=110) {
+			System.out.println("유령의 집");
+			cnt++;
+		}
+		
+		if( 13<=age && age<60 && t>=140 ) {
+			System.out.println("롤러코스터");
+			cnt++;
+		}
+		
+		if ( 10<=age && 130<=t && t<200 ) {
+			System.out.println("자이로드롭");
+			cnt++;
+		}
+		System.out.println("탈 수 있는 놀이기구 갯수"+cnt);
+		
+	
+		
+	}
+
+}
+ ```
+
+
+
+
+
+
+
+
