@@ -1,5 +1,75 @@
 # java-basic
 메가스터디 IT 아카데미 3기 ( 자바기본 )
+```java
+package day07.howork;
+//1. 1이상 ~ 100미만의 홀수를 출력하기 
+
+public class homework01 {
+	public static void main(String[] args) {
+		int n =1;
+		
+		while(n<100) {
+			System.out.println(n);
+			n+=2;
+		}
+	}
+
+}
+```
+
+
+```java
+package day07.howork;
+//2. 100 부터 1까지 거꾸로 출력 
+//100 99 98 ...
+public class homework02 {
+	public static void main(String[] args) {
+		int n=100;
+		while(n>0) {
+			System.out.println(n);
+			n--;
+		}
+	}
+
+}
+```
+
+```java
+package day07.howork;
+//3. 구구단 5단 출력
+public class homework03 {
+	public static void main(String[] args) {
+		int n = 1;
+		while(n<10) {
+			
+			System.out.println("5"+"x"+n+"="+5*n);
+			n++;
+		}
+		
+	}
+
+}
+
+```
+```java
+package day07.howork;
+//4. 30 + 31 + 32 + 33 + ... + 100 의 결과를 출력하세요. 4615가 나오면 정답.
+public class homework04 {
+	public static void main(String[] args) {
+		int n, sum;
+		sum =0;
+		n = 30 ;
+		
+		while(n<=100) {
+			sum+=n;
+			n++;
+		}
+		System.out.println(sum);
+	}
+
+}
+```
+
 
 ```java
 
