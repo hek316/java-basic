@@ -121,7 +121,7 @@ public class homework06 {
 		Scanner sc = new Scanner(System.in);
 		int x, y ;
 		int answer;
-		int cnt;
+		int cnt = 1;
 		
 		
 		x = (int)((Math.random()*8)+2);
@@ -138,6 +138,7 @@ public class homework06 {
 				
 		}
 		
+		System.out.println(끝!);
 	}
 	
 	
