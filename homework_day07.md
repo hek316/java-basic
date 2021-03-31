@@ -83,17 +83,18 @@ import java.util.Scanner;
 public class homework05 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int n ,sum ,rand;
+		int n ,sum;
 		sum =0; n=0;
 		System.out.println("정수를 입력하시오");
 	    n = sc.nextInt();
 	    
 		
 		while (n!=-1) {
-			rand = (int)(Math.random()*10);
-			sum+=rand; 
-	    System.out.println(rand+"+"+sum+"="+sum);
+			 
+	    
 	    System.out.println("정수를 입력하시오");
+	    sum+=n;
+	    System.out.println(n+"+"+sum+"="+sum);
 	    n = sc.nextInt();
 	    }
 		System.out.println("총합:"+sum);
