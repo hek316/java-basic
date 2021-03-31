@@ -69,14 +69,46 @@ public class homework04 {
 
 }
 ```
+```java
+package day07.howork;
 
+import java.util.Scanner;
+
+/*
+ * 5. 사용자가 -1을 입력할 때까지 정수를 무한히 입력 받고 
+   -1을 입력하면 입력 받은 정수들의 총합을 출력하세요.
+
+ */
+
+public class homework05 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n ,sum ,rand;
+		sum =0; n=0;
+		System.out.println("정수를 입력하시오");
+	    n = sc.nextInt();
+	    
+		
+		while (n!=-1) {
+			rand = (int)(Math.random()*10);
+			sum+=rand; 
+	    System.out.println(rand+"+"+sum+"="+sum);
+	    System.out.println("정수를 입력하시오");
+	    n = sc.nextInt();
+	    }
+		System.out.println("총합:"+sum);
+	}
+
+}
+
+```
 
 ```java
 
 import java.util.Scanner;
 
 /*
- * Math.random()을 사용하여 구구단 문제를 랜덤하게 내고(2~9단), 
+ * 6.Math.random()을 사용하여 구구단 문제를 랜덤하게 내고(2~9단), 
 답을 입력 받아 "정답!" 혹은 "땡.."을 출력
 정답이 5번 나올 때까지 반복
  * 
