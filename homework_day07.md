@@ -121,21 +121,23 @@ public class homework06 {
 		Scanner sc = new Scanner(System.in);
 		int x, y ;
 		int answer;
+		int cnt;
 		
 		
 		x = (int)((Math.random()*8)+2);
 		y = (int)((Math.random()*9)+1);
 		
-		while(x*y!=5){
+		while(cnt<=5){
 			System.out.println(x+"X"+y+"=");
 			answer = sc.nextInt();
 			System.out.println(x*y==answer ? "정답!":"떙..");
 			x = (int)((Math.random()*8)+2);
 			y = (int)((Math.random()*9)+1);
+			cnt++;
 				
 				
 		}
-		System.out.println("답이 5이므로 프로그램이 종류되었습니다");
+		
 	}
 	
 	
