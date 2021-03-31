@@ -208,7 +208,7 @@ public class homework08 {
 			a[2]=1;
 			int n;
 			n=1;
-			while(n!=501) {
+			while(a[n]<=500) {
 				a[n+2]= a[n] + a[n+1];
 			    System.out.println(a[n]);
 				n++;	
